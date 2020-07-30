@@ -1,4 +1,6 @@
-#pragma once
+// #pragma once
+#ifndef RENDER_H  
+#define RENDER_H
 
 #include <unordered_map>
 #include <io2d.h>
@@ -62,3 +64,5 @@ private:
     
     std::unordered_map<Model::Landuse::Type, io2d::brush> m_LanduseBrushes;
 };
+
+#endif // RENDER_H

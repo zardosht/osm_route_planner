@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10.2)
+cmake_minimum_required(VERSION 3.11.3)
 
 # Set the C++ standard we will use
 set(CMAKE_CXX_STANDARD 17)
@@ -33,9 +33,9 @@ target_link_libraries(OSM_A_star_search
 )
 
 # Add the testing executable
-add_executable(testme test/utest_rp_a_star_search.cpp src/route_planner.cpp src/model.cpp src/route_model.cpp)
+add_executable(test test/utest_rp_a_star_search.cpp src/route_planner.cpp src/model.cpp src/route_model.cpp)
 
-target_link_libraries(testme 
+target_link_libraries(test 
     gtest_main 
     pugixml
 )
